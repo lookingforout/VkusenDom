@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadachas 3</title>
+</head>
+<body>
+  <p>Първи параграф vkusen</p>
+  <p>Втори параграф ne mnogo vkusen</p>
+  <p>Трети параграф nai-vkusen</p>
+  <button onclick="addTextShadow()">Добави сянка</button>
+
+  <script>
+    function addTextShadow() {
+      const paragraphs = document.querySelectorAll('p');
+      paragraphs.forEach(paragraph => {
+        paragraph.style.textShadow = "2px 2px 5px gray";
+      });
+    }
+  </script>
+</body>
+</html>

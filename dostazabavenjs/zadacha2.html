@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zadachas 2</title>
+  <style>
+    div {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div>Първи div ihaaaa</div>
+  <div>Втори div uhaaaaaaaaaa</div>
+  <div>Трети div URAAAAAAAAAAAAAAAAAA</div>
+  <button onclick="changeBackground()">Смени фона</button>
+
+  <script>
+    function changeBackground() {
+      const divs = document.querySelectorAll('div');
+      divs.forEach(div => {
+        div.style.backgroundColor = "red";
+      });
+    }
+  </script>
+</body>
+</html>
